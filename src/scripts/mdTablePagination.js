@@ -13,7 +13,8 @@ function mdTablePagination() {
     var defaultLabel = {
       page: 'Page:',
       rowsPerPage: 'Rows per page:',
-      of: 'of'
+      of: 'of',
+      totalAmountText: 'Total amount sum:',
     };
 
     self.label = angular.copy(defaultLabel);
@@ -118,7 +119,8 @@ function mdTablePagination() {
       pageSelect: '=?mdPageSelect',
       onPaginate: '=?mdOnPaginate',
       limitOptions: '=?mdLimitOptions',
-      total: '@mdTotal'
+      total: '@mdTotal',
+      totalAmount: '@mdTotalAmount'
     },
     compile: compile,
     controller: Controller,
