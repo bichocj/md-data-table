@@ -1,3 +1,21 @@
+# FORK, to show total amount sum
+
+v0.10.11
+Use adding the attribute ***md-total-amount***
+```html
+<md-table-pagination
+                    md-limit="query.limit"
+                    md-limit-options="filter.limitOptions"
+                    md-page="query.page"
+                    md-total-amount="s/. {{ registers.total_amount }}"
+                    md-total="{{ registers.count }}"
+                    md-on-paginate="getRegisters"
+                    md-label="{page:'Página',rowsPerPage:'Filas por pagina',of:'de',totalAmountText:'Suma de monto pagado:'}"
+                    md-page-select>
+            </md-table-pagination>
+```
+
+
 # Material Design Data Table
 
 This module is an effort to implement Material Design data tables in [Angular Material](https://material.angularjs.org/latest/#/). Data tables are used to present raw data sets and usually appear in desktop enterprise applications. Data tables are particularly useful for visualizing and manipulating large data sets.
